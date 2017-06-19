@@ -1,0 +1,167 @@
+# config/suite.def
+# This file is used to build several benchmarks with a single command. 
+# Typing "make suite" in the main directory will build all the benchmarks
+# specified in this file. 
+# Each line of this file contains a benchmark name, class, and number
+# of nodes. The name is one of "cg", "is", "ep", mg", "ft", "sp", "bt", 
+# "lu", and "dt". 
+# The class is one of "S", "W", "A", "B", "C", "D", and "E"
+# (except that no classes C, D and E for DT, and no class E for IS).
+# The number of nodes must be a legal number for a particular
+# benchmark. The utility which parses this file is primitive, so
+# formatting is inflexible. Separate name/class/number by tabs. 
+# Comments start with "#" as the first character on a line. 
+# No blank lines. 
+# The following example builds 1 processor sample sizes of all benchmarks. 
+bt	S	1
+bt	S	4
+bt	S	9
+bt	S	16
+bt	A	1
+bt	A	4
+bt	A	9
+bt	A	16
+bt	B	1
+bt	B	4
+bt	B	9
+bt	B	16
+bt	C	1
+bt	C	4
+bt	C	9
+bt	C	16
+cg	S	1
+cg	S	2
+cg	S	4
+cg	S	8
+cg	S	16
+cg	A	1
+cg	A	2
+cg	A	4
+cg	A	8
+cg	A	16
+cg	B	1
+cg	B	2
+cg	B	4
+cg	B	8
+cg	B	16
+cg	C	1
+cg	C	2
+cg	C	4
+cg	C	8
+cg	C	16
+ep	S	1
+ep	S	2
+ep	S	4
+ep	S	8
+ep	S	16
+ep	A	1
+ep	A	2
+ep	A	4
+ep	A	8
+ep	A	16
+ep	B	1
+ep	B	2
+ep	B	4
+ep	B	8
+ep	B	16
+ep	C	1
+ep	C	2
+ep	C	4
+ep	C	8
+ep	C	16
+ft	S	1
+ft	S	2
+ft	S	4
+ft	S	8
+ft	S	16
+ft	A	1
+ft	A	2
+ft	A	4
+ft	A	8
+ft	A	16
+ft	B	1
+ft	B	2
+ft	B	4
+ft	B	8
+ft	B	16
+ft	C	1
+ft	C	2
+ft	C	4
+ft	C	8
+ft	C	16
+is	S	1
+is	S	2
+is	S	4
+is	S	8
+is	S	16
+is	A	1
+is	A	2
+is	A	4
+is	A	8
+is	A	16
+is	B	1
+is	B	2
+is	B	4
+is	B	8
+is	B	16
+is	C	1
+is	C	2
+is	C	4
+is	C	8
+is	C	16
+lu	S	1
+lu	S	2
+lu	S	4
+lu	S	8
+lu	S	16
+lu	A	1
+lu	A	2
+lu	A	4
+lu	A	8
+lu	A	16
+lu	B	1
+lu	B	2
+lu	B	4
+lu	B	8
+lu	B	16
+lu	C	1
+lu	C	2
+lu	C	4
+lu	C	8
+lu	C	16
+mg	S	1
+mg	S	2
+mg	S	4
+mg	S	8
+mg	S	16
+mg	A	1
+mg	A	2
+mg	A	4
+mg	A	8
+mg	A	16
+mg	B	1
+mg	B	2
+mg	B	4
+mg	B	8
+mg	B	16
+mg	C	1
+mg	C	2
+mg	C	4
+mg	C	8
+mg	C	16
+sp	S	1
+sp	S	4
+sp	S	9
+sp	S	16
+sp	A	1
+sp	A	4
+sp	A	9
+sp	A	16
+sp	B	1
+sp	B	4
+sp	B	9
+sp	B	16
+sp	C	1
+sp	C	4
+sp	C	9
+sp	C	16
